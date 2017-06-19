@@ -29,7 +29,8 @@
       <a ng-click="about.selected = 3" ng-class="{'selected' : about.selected === 3}" href class="">Contact Us</a>
     </div>
   </div>
-  <div class="content who" ng-show="about.selected === 0">
+
+  <div class="content who" ng-if="about.selected === 0">
     <div>
       <div class="text-container odd">
         <h2 class="mt40 pt40 text-center">We Are Who We Are</h2>
@@ -74,7 +75,8 @@
     </div>
   </div>
 
-  <div class="content speciality" ng-show="about.selected === 1">
+
+  <div class="content speciality" ng-if="about.selected === 1">
     <div>
       <div class="text-container odd">
         <h2 class="mt40 pt40 text-center">Coffe Of Course !!</h2>
@@ -118,7 +120,8 @@
       </div>
     </div>
   </div>
-  <div class="content contact" ng-show="about.selected === 3">
+
+  <div class="content contact" ng-if="about.selected === 3">
     <div class="text-center contact-container mt40 pt40 pb40">
       <h2 class="text-center brown underlined pb40">Direct Contact</h2>
       <div class="information">
@@ -138,4 +141,5 @@
       </div>
     </div>
   </div>
+  
 </div>
